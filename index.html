@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TDS Assignment 8 — Quarterly Earnings (Reveal.js)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+
+  <!-- Highlight.js plugin CSS (Reveal uses highlight plugin) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/default.min.css">
+
+  <style>
+    /* small customization */
+    .email { font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Load slides from markdown file -->
+      <section data-markdown="slides.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n"
+               data-separator-notes="^Note:"
+               data-charset="utf-8">
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal core -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.min.js"></script>
+
+  <!-- Markdown plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.esm.min.js"></script>
+
+  <!-- Highlight plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.esm.min.js"></script>
+
+  <!-- Math (MathJax) plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.esm.min.js"></script>
+
+  <script>
+    // Initialize Reveal
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath ],
+      math: {
+        // Using MathJax (no extra config needed for basic use)
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+      },
+      highlight: {
+        // highlight.js config (default)
+      },
+      // optional: default slide transition
+      transition: 'fade'
+    });
+  </script>
+</body>
+</html>
